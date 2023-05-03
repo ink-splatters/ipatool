@@ -2,7 +2,7 @@ package appstore
 
 import (
 	"fmt"
-	"github.com/ink-splatters/ipatool/pkg/http"
+	"github.com/ink-splatters/ipatool/v2/pkg/http"
 	"github.com/pkg/errors"
 	"strings"
 )

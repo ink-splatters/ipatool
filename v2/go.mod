@@ -1,4 +1,4 @@
-module github.com/ink-splatters/ipatool
+module github.com/ink-splatters/ipatool/v2
 
 go 1.19
 
