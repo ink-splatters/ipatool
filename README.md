@@ -1,7 +1,7 @@
 # IPATool
 
-[![Release](https://img.shields.io/github/release/majd/ipatool.svg?label=Release)](https://GitHub.com/majd/ipatool/releases/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/majd/ipatool/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/release/ink-splatters/ipatool.svg?label=Release)](https://GitHub.com/ink-splatters/ipatool/releases/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ink-splatters/ipatool/blob/main/LICENSE)
 
 `ipatool` is a command line tool that allows you to search for iOS apps on the [App Store](https://apps.apple.com) and download a copy of the app package, known as an _ipa_ file.
 
@@ -14,8 +14,8 @@
 - [Usage](#usage)
 - [Compiling](#compiling)
 - [License](#license)
-- [Changelog](https://github.com/majd/ipatool/blob/main/CHANGELOG.md)
-- [FAQ](https://github.com/majd/ipatool/wiki/FAQ)
+- [Changelog](https://github.com/ink-splatters/ipatool/blob/main/CHANGELOG.md)
+- [FAQ](https://github.com/ink-splatters/ipatool/wiki/FAQ)
 
 ## Requirements
 - Supported operating system (Windows, Linux or macOS).
@@ -25,14 +25,14 @@
 
 ### Manual
 
-You can grab the latest version of `ipatool` from [GitHub releases](https://github.com/majd/ipatool/releases).
+You can grab the latest version of `ipatool` from [GitHub releases](https://github.com/ink-splatters/ipatool/releases).
 
 ### Package Manager (macOS)
 
 You can install `ipatool` using [Homebrew](https://brew.sh).
 
 ```shell
-$ brew tap majd/repo
+$ brew tap ink-splatters/repo
 $ brew install ipatool
 ```
 
@@ -132,9 +132,9 @@ $ go build -o ipatool
 Unit tests can be executed with the following command.
 
 ```shell
-$ go test -v github.com/majd/ipatool/...
+$ go test -v github.com/ink-splatters/ipatool/...
 ```
 
 ## License
 
-IPATool is released under the [MIT license](https://github.com/majd/ipatool/blob/main/LICENSE).
+IPATool is released under the [MIT license](https://github.com/ink-splatters/ipatool/blob/main/LICENSE).

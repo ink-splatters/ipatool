@@ -1,4 +1,4 @@
-module github.com/majd/ipatool
+module github.com/ink-splatters/ipatool
 
 go 1.19
 

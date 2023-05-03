@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/majd/ipatool/cmd"
+	"github.com/ink-splatters/ipatool/cmd"
 	"os"
 )
 

@@ -2,10 +2,10 @@ package appstore
 
 import (
 	"github.com/golang/mock/gomock"
-	"github.com/majd/ipatool/pkg/http"
-	"github.com/majd/ipatool/pkg/keychain"
-	"github.com/majd/ipatool/pkg/log"
-	"github.com/majd/ipatool/pkg/util"
+	"github.com/ink-splatters/ipatool/pkg/http"
+	"github.com/ink-splatters/ipatool/pkg/keychain"
+	"github.com/ink-splatters/ipatool/pkg/log"
+	"github.com/ink-splatters/ipatool/pkg/util"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
