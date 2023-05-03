@@ -5,6 +5,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/thediveo/enumflag/v2"
 	"golang.org/x/net/context"
+	"runtime/debug"
 )
 
 func rootCmd() *cobra.Command {
@@ -12,12 +13,14 @@ func rootCmd() *cobra.Command {
 	var nonInteractive bool
 	var format OutputFormat
 
+	bi, _ :=  debug.ReadBuildInfo()
+
 	cmd := &cobra.Command{
 		Use:           "ipatool",
 		Short:         "A cli tool for interacting with Apple's ipa files",
 		SilenceErrors: true,
 		SilenceUsage:  true,
-		Version:       version,
+		Version:       bi.Main.Version,
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 			ctx := context.WithValue(context.Background(), "logger", newLogger(format, verbose))
 			ctx = context.WithValue(ctx, "interactive", nonInteractive == false)
