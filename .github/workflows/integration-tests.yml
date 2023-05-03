@@ -10,14 +10,13 @@ jobs:
     name: Build
     runs-on: macos-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v3
         with:
           go-version: '1.19.3'
           cache: true
-      - run: ./tools/version.sh
       - run: go build -o ipatool
         env:
           CGO_CFLAGS: -mmacosx-version-min=10.15
@@ -32,7 +31,7 @@ jobs:
     runs-on: macos-latest
     needs: [build]
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         command: [auth, download, purchase, search]
     steps:
